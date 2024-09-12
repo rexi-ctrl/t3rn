@@ -10,29 +10,33 @@ TirnBot adalah sebuah bot yang secara otomatis melakukan bridging dari jaringan 
 - Python 3.7 atau lebih tinggi
 - `web3.py`
 - `eth_account`
+# buat screen
 
+1. ```bash
+   screen -S BUAT_NAMA_SCREEN
+   
 ## Instalasi
 
-1. Clone repository ini ke lokal Anda:
+2. Clone repository ini ke lokal Anda:
 
    ```bash
    git clone https://github.com/rexi-ctrl/t3rn.git
-2. Masuk ke direktori proyek:
+3. Masuk ke direktori proyek:
    ```bash
    cd t3rn
-3. Install dependencies yang diperlukan untuk menjalankan script tanpa error:
+4. Install dependencies yang diperlukan untuk menjalankan script tanpa error:
    ```bash
    pip install web3
 
 # Konfigurasi
 
-4. Ganti private_key dan my_address dengan
+5. Ganti private_key dan my_address dengan
    private and addres enteee
 
    ```bash
    nano bot.py
    
-5. Jalankan Bot
+6. Jalankan Bot
    
    ```bash
    python bot.py
