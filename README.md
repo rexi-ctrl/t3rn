@@ -41,8 +41,10 @@ TirnBot adalah sebuah bot yang secara otomatis melakukan bridging dari jaringan 
 
    ```bash
    sudo apt install python3-venv
+
    ```bash
    python3 -m venv myenv
+
    ```bash
    source myenv/bin/activate
 
