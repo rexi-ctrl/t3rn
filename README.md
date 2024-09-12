@@ -1,4 +1,4 @@
-# TirnBot - Bot Auto Bridge Arbitrum Sepolia ke Base Sepolia
+# TirnBot - Bot Auto Bridge OP Sepolia ke Base Sepolia
 
 TirnBot adalah sebuah bot yang secara otomatis melakukan bridging dari jaringan Arbitrum Sepolia ke Base Sepolia. Bot ini dikembangkan untuk memudahkan proses transfer token di antara dua jaringan tersebut.
 
@@ -33,3 +33,4 @@ Ganti private_key dan my_address dengan address anda.
    
    ```bash
    python bot.py
+BOT BY: https://github.com/vinskasenda
