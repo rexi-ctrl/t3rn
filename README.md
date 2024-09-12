@@ -41,6 +41,8 @@ TirnBot adalah sebuah bot yang secara otomatis melakukan bridging dari jaringan 
    ```bash
    python bot.py
 
+7. CTRL + A + D buat keluar dari screen
+
 # jika mengalami masalah pada step 3 coba
 
 1. ```bash
