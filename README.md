@@ -25,9 +25,14 @@ TirnBot adalah sebuah bot yang secara otomatis melakukan bridging dari jaringan 
    pip install web3
 
 # Konfigurasi
-Ganti private_key dan my_address dengan address anda.
 
-4. Jalankan Bot
+4. Ganti private_key dan my_address dengan
+   private and addres enteee
+
+   ```bash
+   nano bot.py
+   
+5. Jalankan Bot
    
    ```bash
    python bot.py
