@@ -43,7 +43,7 @@ TirnBot adalah sebuah bot yang secara otomatis melakukan bridging dari jaringan 
 
 7. CTRL + A + D buat keluar dari screen
 
-# jika mengalami masalah pada step 3 coba
+# jika mengalami masalah pada step 4 coba
 
 1. ```bash
    sudo apt install python3-venv
