@@ -47,7 +47,7 @@ if not web3.is_connected():
 account = Account.from_key(private_key)
 
 # Data transaksi untuk bridge
-data = '0x56591d5962737370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d360f8dF9604efA1DE0E8e70fa3a7023b9660532000000000000000000000000000000000000000000000000003549746d9ec3cd0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000354a6ba7a18000'
+data = '0x56591d5962737370000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d360f8df9604efa1de0e8e70fa3a7023b966053200000000000000000000000000000000000000000000000000238644b463d65700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002386f26fc10000'
 
 # Fungsi untuk membuat dan mengirim transaksi
 def send_bridge_transaction():
@@ -60,9 +60,9 @@ def send_bridge_transaction():
             'to': contract_address,
             'from': my_address,
             'data': data,
-            'value': web3.to_wei(0.015, 'ether')  # Mengirim 0.01 ETH
+            'value': web3.to_wei(0.01, 'ether')  # Mengirim 0.01 ETH
         })
-        gas_limit = gas_estimate + 15000  # Tambahkan buffer gas
+        gas_limit = gas_estimate + 10000  # Tambahkan buffer gas
     except Exception as e:
         print(f"Error estimating gas: {e}")
         return None
@@ -71,7 +71,7 @@ def send_bridge_transaction():
     transaction = {
         'nonce': nonce,
         'to': contract_address,
-        'value': web3.to_wei(0.015, 'ether'),  # Mengirim 0.01 ETH
+        'value': web3.to_wei(0.01, 'ether'),  # Mengirim 0.01 ETH
         'gas': gas_limit,  # Gunakan gas limit yang diestimasi
         'gasPrice': web3.eth.gas_price,
         'chainId': chain_id,
@@ -102,7 +102,7 @@ try:
         if tx_hash:
             successful_txs += 1
             print(f"Tx Hash: {tx_hash} | Total Tx Sukses: {successful_txs}")
-        time.sleep(60)  # Delay 25 detik setiap transaksi
+        time.sleep(25)  # Delay 25 detik setiap transaksi
 except KeyboardInterrupt:
     print("\nScript dihentikan oleh pengguna.")
     print(f"Total transaksi sukses: {successful_txs}")
